@@ -1,0 +1,22 @@
+import numpy as np
+import matplotlib as plt
+import matplotlib.pyplot as plt
+
+a=0.5
+b=2
+c=9
+
+#print "le quite el asiento a Miguel"
+
+x=np.linspace(-50,100,1000)   #linea unidimensional de 0 a 100 dividido 1000 espacios
+
+y=a*x**2+b*x+c
+z=a*x+c*x**2
+
+plt.figure()
+plt.plot(x,y,"b.")
+plt.plot(x,y+1000,"r-")
+plt.figure()
+plt.plot(x,z,"y.")
+plt.grid()
+plt.show()
